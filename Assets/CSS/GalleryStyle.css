@@ -1,0 +1,105 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header {
+    float: left;
+    text-align: left;
+    font-size: 35px;
+    padding: 5px 5px 5px 5px;
+    color:aliceblue;
+    margin-left:10%;
+}
+
+.navs{
+    margin-right:10%;
+}
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav  a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../Images/BackgroundImage/bluewood.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    
+    .topnav .navs {
+        float: left;
+        display: block;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .header {
+        float: left;
+        text-align: left;
+        font-size: 35px;
+        color:aliceblue;
+        margin-left:10%;
+        height: auto;
+    }
+}
